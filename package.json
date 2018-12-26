@@ -1,0 +1,61 @@
+{
+  "name": "vk",
+  "version": "0.1.1",
+  "description": "vkcyan的测试",
+  "author": "vkcyan <wu.vkcyan@gmail.com>",
+  "main": "lib/vkcolorpicker.umd.min.js",
+  "keyword": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vkcyan"
+  },
+  "private": false,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name vkcolorpicker --dest lib packages/index.js"
+  },
+  "dependencies": {
+    "node-sass": "^4.11.0",
+    "sass": "^1.15.2",
+    "sass-loader": "^7.1.0",
+    "vkcyan-colorpicker": "^0.1.0",
+    "vkcyan-ui": "^0.1.1",
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.2.0",
+    "@vue/cli-plugin-eslint": "^3.2.0",
+    "@vue/cli-service": "^3.2.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0-0",
+    "vue-template-compiler": "^2.5.17",
+    "webpack-chain": "^5.0.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
