@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'vkModal',
+  name: 'vkButtom',
   props: {
     type: {
       type: String,

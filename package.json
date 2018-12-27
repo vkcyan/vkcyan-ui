@@ -17,19 +17,19 @@
     "lib": "vue-cli-service build --target lib --name vkcolorpicker --dest lib packages/index.js"
   },
   "dependencies": {
-    "node-sass": "^4.11.0",
-    "sass": "^1.15.2",
-    "sass-loader": "^7.1.0",
-    "vkcyan-colorpicker": "^0.1.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
     "vkcyan-ui": "^0.1.1",
-    "vue": "^2.5.17"
+    "vue": "^2.5.17",
+    "vue-markdown-loader": "^2.4.1",
+    "vue-router": "^3.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.2.0",
     "@vue/cli-plugin-eslint": "^3.2.0",
     "@vue/cli-service": "^3.2.0",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
+    "eslint": "^5.11.1",
     "eslint-plugin-vue": "^5.0.0-0",
     "vue-template-compiler": "^2.5.17",
     "webpack-chain": "^5.0.1"

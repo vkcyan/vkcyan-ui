@@ -1,6 +1,6 @@
-import vkModal from './src/modal.vue'
+import vkButtom from './src/buttom.vue'
 // vkModal.install = function(Vue) {
 //   Vue.component(vkModal.name, vkModal)
 // }
 
-export default vkModal
+export default vkButtom

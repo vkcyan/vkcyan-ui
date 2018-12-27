@@ -5,14 +5,24 @@ module.exports = {
   chainWebpack: config => {
     config.module
       .rule('js')
-      .include
-        .add('/packages')
-        .end()
+      .include.add('/packages')
+      .end()
       .use('babel')
-        .loader('babel-loader')
-        .tap(options => {
-          // 修改它的选项...
-          return options
-        })
+      .loader('babel-loader')
+      .tap(options => {
+        // 修改它的选项...
+        return options
+      })
+    config.module
+      .rule('md')
+      .test(/\.md/)
+      .use('vue-loader')
+      .loader('vue-loader')
+      .end()
+      .use('vue-markdown-loader')
+      .loader('vue-markdown-loader/lib/markdown-compiler')
+      .options({
+        raw: true
+      })
   }
 }
