@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <div class="header">
-      <img src="./assets/logo.png" @click="gotoHome">
-      <router-link class="goto-work" :to="{name: 'page'}">文档</router-link>
-    </div>
+    <vkheader></vkheader>
     <router-view/>
   </div>
 </template>
 
 <script>
-
+import vkheader from './components/header'
 export default {
+  components: {
+    vkheader
+  },
   name: 'app',
   data() {
     return {
@@ -21,9 +21,6 @@ export default {
     headleChangeColor() {
       console.log('颜色改变')
     },
-    gotoHome() {
-      this.$router.push('home')
-    }
   }
 }
 </script>
@@ -37,17 +34,6 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 20px 100px;
-  img {
-    width: 50px;
-  }
-  .goto-work {
-    text-decoration: none;
-  }
-}
+
 </style>
 
