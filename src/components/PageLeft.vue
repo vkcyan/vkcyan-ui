@@ -1,11 +1,7 @@
 <template>
   <div class="page-left">
     <div class="base-menu">
-      <p>开发指北</p>
-      <p>介绍</p>
-      <p>安装</p>
-      <p>快速开始</p>
-      <p>更新日志</p>
+      <p v-for="item in baseMenu" :key="item.text" @click="gotoUrl(item.url)">{{item.text}}</p>
     </div>
     <div></div>
   </div>
@@ -13,7 +9,34 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      baseMenu: [
+        {
+          text:'开发指北',
+          url: 'guide'
+        },
+        {
+          text: '安装',
+          url: 'install'
+        },
+        {
+          text: '快速开始',
+          url: 'quickStart'
+        },
+        {
+          text: '更新日志',
+          url: 'updateLog'
+        }
+      ] 
+    }
+  },
+  methods: {
+    gotoUrl (e) {
+      this.$router.push(e)
+      console.log(e);
+    }
+  }
 }
 </script>
 

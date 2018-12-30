@@ -1,7 +1,8 @@
 <template>
   <div class="page">
     <page-left></page-left>
-    <buttom-md class="component"></buttom-md>
+    <router-view/>
+    <!-- <buttom-md class="component"></buttom-md> -->
   </div>
 </template>
 

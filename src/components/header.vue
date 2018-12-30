@@ -1,5 +1,5 @@
 <template>
-  <div :class="routerData == 'page' ? 'header_page header' : 'home header'">
+  <div :class="routerData == 'home' ? 'home header' : 'header_page header'">
     <img src="../assets/logo.png" @click="gotoHome">
     <router-link class="goto-work" :to="{name: 'page'}">文档</router-link>
   </div>
